@@ -17,7 +17,7 @@ html {
     --height-header: 85px;
     --main-color: #7a60ff;
     --main-transition: 0.2s;
-    --gbm: linear-gradient(to left, var(--main-color), #cd9ffa) ;
+    --gbm: linear-gradient(to left, var(--main-color), #cd9ffa);
 }
 
 
@@ -305,6 +305,7 @@ header .navbar li a:hover {
     margin-bottom: 2rem;
     font-size: 0.8rem;
     margin-right: 2rem;
+    width: 100%;
 }
 
 
@@ -805,7 +806,7 @@ footer {
     text-align: center;
     font-size: 0.8rem;
     background-color: #fafafa !important;
-    
+
 }
 
 /* End footer  */
@@ -840,6 +841,10 @@ footer {
         justify-content: center;
     }
 
+    .landing .wave {
+        display: none;
+    }
+
     .land .phoneImage {
 
         margin-top: 3rem;
@@ -861,8 +866,12 @@ footer {
         display: none;
     }
 
+    .testimonials .container {
+        gap: 0;
+    }
+
     .testimonials .container .box {
-        width: 30rem;
+        width: 90%;
         height: 28rem;
         flex-direction: column;
         text-align: center;
@@ -872,5 +881,8 @@ footer {
         margin: auto;
     }
 
+    .testimonials .container .arrow {
+        margin: 0;
+    }
 
 }
