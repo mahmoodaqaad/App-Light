@@ -20,6 +20,26 @@ html {
 }
 
 
+html {
+
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gbm);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eee;
+    box-shadow: 0 0 3px 3px inset #bbb;
+    border-radius: 1rem;
+}
+
 .txt-gray {
     color: #777;
 }
@@ -245,9 +265,11 @@ header .navbar li a:hover {
         padding: 0.7rem 0;
 
     }
-    header.white .navbar li a{
+
+    header.white .navbar li a {
         color: white !important;
     }
+
     header .navbar li:hover {
         background-color: #2d17d2;
 
@@ -551,7 +573,7 @@ header .navbar li a:hover {
 
 .team .boxs {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
 }
 
@@ -564,7 +586,7 @@ header .navbar li a:hover {
     width: 15.6rem;
     height: 15.6rem;
     border-radius: 50%;
-
+    object-fit: cover;
 }
 
 .team .boxs .box h3 {
@@ -827,10 +849,11 @@ footer {
 }
 
 @media(max-width:770px) {
-    html{
+    html {
         font-size: 13px;
 
     }
+
     .main-heading h3 {
         font-size: 1.3rem;
     }
@@ -903,6 +926,7 @@ footer {
         width: 3.2rem;
         height: 3.2rem;
     }
+
 
     .testimonials .container {
         gap: 0;
